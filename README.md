@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # Todo App
 
-To Open The App [Click Here]([https://github.com/angular/angular-cli](https://todo-angular-nilesh.vercel.app/))
+To Open The App [Click Here]([(https://todo-angular-nilesh.vercel.app/)])
 
 ## Development server
 
