@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # Todo App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.19.
+To Open The App [Click Here]([https://github.com/angular/angular-cli](https://todo-angular-nilesh.vercel.app/))
 
 ## Development server
 
