@@ -1,0 +1,52 @@
+<section>
+  <h1>Add Your Task</h1>
+  <div class="todo-add-section">
+    <input
+      type="text"
+      [(ngModel)]="inputText"
+      placeholder="Write Your Task Title"
+    />
+    <textarea
+      [(ngModel)]="inputDescription"
+      placeholder="Write Your Task Desciption"
+    ></textarea>
+    <button (click)="saveTask()" class="success">
+      {{ editId === null ? 'Add task' : 'Update task' }}
+    </button>
+  </div>
+
+  <div *ngIf="inputData.length > 0">
+    <h1>List Of Task</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Desciption</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of inputData">
+          <td>{{ item.title }}</td>
+          <td>{{ item.desc }}</td>
+          <td>
+            <button (click)="editTask(item)" class="edit-btn">
+              Edit
+            </button>
+            <button (click)="removeTask(item.id)" class="remove-btn">
+              Remove
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pending-task">
+      <p>
+        You Have {{ inputData.length }} Pending Task |
+        <button (click)="clearTask()">Clear All</button>
+      </p>
+    </div>
+  </div>
+</section>

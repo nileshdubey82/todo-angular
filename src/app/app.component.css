@@ -1,0 +1,149 @@
+section {
+  background-color: white;
+  padding: 30px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.todo-add-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+.todo-add-section input {
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #fa6c01;
+  color: white;
+}
+
+button.success {
+  background-color: #038914; /* Green background */
+  border: none;
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+  transition-duration: 0.4s; /* Smooth transition for hover effects */
+}
+.remove-btn {
+  background-color: #ff2a00; /* Green background */
+  border: none;
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+  transition-duration: 0.4s; /* Smooth transition for hover effects */
+}
+.edit-btn {
+  background-color: #1d0574; /* Green background */
+  border: none;
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px; /* Rounded corners */
+  transition-duration: 0.4s; /* Smooth transition for hover effects */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  box-shadow:
+    0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Input + Textarea */
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  outline: none;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Focus Effect */
+input:focus,
+textarea:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* Placeholder */
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+
+/* Textarea Specific */
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Disabled */
+input:disabled,
+textarea:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+/* Optional: Remove default styles on some browsers */
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+
+.pending-task {
+  margin-top: 10px;
+}
